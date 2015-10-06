@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="content" method="upgrade">
+    <name>PLG_CONTENT_CROWDFUNDINGINFO</name>
+    <author>Todor Iliev</author>
+    <copyright>Copyright (C) 2015 Todor Iliev ( ITPrism.com ). All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <version>2.0</version>
+    <creationDate>30 June, 2015</creationDate>
+    <description><![CDATA[
+    <p>Crowdfunding - Info is a plugin that adds block with short information about the project (funding period, location, map,...)</p>
+    <p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+    <p>Please, <a href="http://extensions.joomla.org/extensions/extension/e-commerce/donations/crowdfunding" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
+    ]]></description>
+    
+    <help url="PLG_CONTENT_CROWDFUNDINGINFO_HELP_URL"/>
+    
+    <files>
+        <filename plugin="crowdfundinginfo">crowdfundinginfo.php</filename>
+
+        <folder>language</folder>
+        <folder>tmpl</folder>
+    </files>
+    
+    <config>
+		<fields name="params">
+            <fieldset name="campaign" label="PLG_CONTENT_CROWDFUNDINGINFO_CAMPAIGN">
+                <field name="display_dates" type="radio" default="0" label="PLG_CONTENT_CROWDFUNDINGINFO_DISPLAY_PERIOD" description="PLG_CONTENT_CROWDFUNDINGINFO_DISPLAY_PERIOD_DESC" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="display_location" type="radio" default="0" label="PLG_CONTENT_CROWDFUNDINGINFO_DISPLAY_CAMPAIGN_LOCATION" description="PLG_CONTENT_CROWDFUNDINGINFO_DISPLAY_LOCATION_DESC" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="display_map" type="radio" default="0" label="PLG_CONTENT_CROWDFUNDINGINFO_DISPLAY_MAP" description="PLG_CONTENT_CROWDFUNDINGINFO_DISPLAY_MAP_DESC" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+            </fieldset>
+
+            <fieldset name="user" label="PLG_CONTENT_CROWDFUNDINGINFO_USER">
+                <field name="user_display_location" type="radio" default="0" label="PLG_CONTENT_CROWDFUNDINGINFO_DISPLAY_USER_LOCATION" description="PLG_CONTENT_CROWDFUNDINGINFO_DISPLAY_USER_LOCATION_DESC" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="display_account_state" type="radio" class="btn-group"
+                       label="PLG_CONTENT_CROWDFUNDINGINFO_DISPLAY_ACCOUNT_STATE"
+                       description="PLG_CONTENT_CROWDFUNDINGINFO_DISPLAY_ACCOUNT_STATE_DESC"
+                       default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="image_size" type="list"
+                       label="PLG_CONTENT_CROWDFUNDINGINFO_IMAGE_SIZE"
+                       description="PLG_CONTENT_CROWDFUNDINGINFO_IMAGE_SIZE_DESC"
+                       default="small" >
+
+                    <option value="icon">PLG_CONTENT_CROWDFUNDINGINFO_ICON</option>
+                    <option value="small">PLG_CONTENT_CROWDFUNDINGINFO_SMALL</option>
+                    <option value="medium">PLG_CONTENT_CROWDFUNDINGINFO_MEDIUM</option>
+                    <option value="large">PLG_CONTENT_CROWDFUNDINGINFO_LARGE</option>
+
+                </field>
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field name="google_maps_key" type="text" default="" size="60" label="PLG_CONTENT_CROWDFUNDINGINFO_GOOGLE_MAP_KEY" description="PLG_CONTENT_CROWDFUNDINGINFO_GOOGLE_MAP_KEY_DESC" />
+                <field name="google_maps_width" type="text" default="300" label="PLG_CONTENT_CROWDFUNDINGINFO_GOOGLE_MAP_WIDTH" description="PLG_CONTENT_CROWDFUNDINGINFO_GOOGLE_MAP_WIDTH_DESC" />
+                <field name="google_maps_height" type="text" default="300" label="PLG_CONTENT_CROWDFUNDINGINFO_GOOGLE_MAP_HEIGHT" description="PLG_CONTENT_CROWDFUNDINGINFO_GOOGLE_MAP_HEIGHT_DESC" />
+            </fieldset>
+            
+        </fields>
+	</config>
+</extension>

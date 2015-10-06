@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset addfieldpath="/administrator/components/com_crowdfunding/models/fields">
+
+        <field name="title" type="text" class="input-xxlarge"
+               label="COM_CROWDFUNDINGFILES_TITLE"
+               description="COM_CROWDFUNDINGFILES_TITLE_DESC"
+               filter="trim"
+               required="true"
+               />
+
+        <field name="description" type="textarea" class="input-xxlarge"
+               label="COM_CROWDFUNDINGFILES_DESCRIPTION"
+               description="COM_CROWDFUNDINGFILES_DESCRIPTION_DESC"
+               filter="trim"
+               rows="5"
+               />
+
+        <field name="user_id" type="user"
+               label="COM_CROWDFUNDINGFILES_USER"
+               description="COM_CROWDFUNDINGFILES_USER_DESC"
+               filter="int"
+               />
+
+        <field name="project_id" type="text" class="readonly"
+               label="COM_CROWDFUNDINGFILES_PROJECT_ID"
+               readonly="true"
+               />
+
+        <field name="filename" type="text" class="readonly"
+               label="COM_CROWDFUNDINGFILES_FILENAME"
+               readonly="true"
+               />
+
+        <field name="id" type="text" class="readonly"
+               label="JGLOBAL_FIELD_ID_LABEL"
+               description="JGLOBAL_FIELD_ID_DESC"
+               default="0"
+               readonly="true"
+               />
+
+    </fieldset>
+
+</form>

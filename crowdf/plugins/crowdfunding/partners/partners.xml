@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="crowdfunding" method="upgrade">
+    <name>PLG_CROWDFUNDING_PARTNERS</name>
+    <author>Todor Iliev</author>
+    <copyright>Copyright (C) 2015 Todor Iliev ( ITPrism.com ). All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <version>2.0</version>
+    <creationDate>30 June, 2015</creationDate>
+    <description><![CDATA[
+	<p>Crowdfunding Partners is a plug-in that displays a form where users will use to upload and assign partners to a project.</p>
+	<p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+	<p>Please, <a href="http://extensions.joomla.org/extensions/extension/e-commerce/donations/crowdfunding" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
+	]]></description>
+    
+    <files>
+        <filename plugin="partners">partners.php</filename>
+
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+    </files>
+    
+    <help url="PLG_CROWDFUNDING_PARTNERS_HELP_URL"/>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="image_size" type="list"
+                       label="PLG_CROWDFUNDING_PARTNERS_IMAGE_SIZE"
+                       description="PLG_CROWDFUNDING_PARTNERS_IMAGE_SIZE_DESC"
+                       default="small" >
+
+                    <option value="icon">PLG_CROWDFUNDING_PARTNERS_ICON</option>
+                    <option value="small">PLG_CROWDFUNDING_PARTNERS_SMALL</option>
+                    <option value="medium">PLG_CROWDFUNDING_PARTNERS_MEDIUM</option>
+                    <option value="large">PLG_CROWDFUNDING_PARTNERS_LARGE</option>
+                </field>
+
+                <field name="width" type="text" label="PLG_CROWDFUNDING_PARTNERS_IMAGE_WIDTH" description="PLG_CROWDFUNDING_PARTNERS_IMAGE_WIDTH_DESC" default="50" />
+                <field name="height" type="text" label="PLG_CROWDFUNDING_PARTNERS_IMAGE_HEIGHT" description="PLG_CROWDFUNDING_PARTNERS_IMAGE_HEIGHT_DESC" default="50" />
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>

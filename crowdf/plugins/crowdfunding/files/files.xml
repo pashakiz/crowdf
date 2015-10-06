@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="crowdfunding" method="upgrade">
+    <name>PLG_CROWDFUNDING_FILES</name>
+    <author>Todor Iliev</author>
+    <copyright>Copyright (C) 2015 Todor Iliev ( ITPrism.com ). All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <version>2.0</version>
+    <creationDate>30 June, 2015</creationDate>
+    <description><![CDATA[
+	<p>Crowdfunding Files is a plug-in that displays a form where users will use to upload and assign files to a project.</p>
+	<p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+	<p>Please, <a href="http://extensions.joomla.org/extensions/extension/e-commerce/donations/crowdfunding" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
+	]]></description>
+    
+    <files>
+        <filename plugin="files">files.php</filename>
+
+        <folder>js</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+    </files>
+    
+    <help url="PLG_CROWDFUNDING_FILES_HELP_URL"/>
+
+    <config>
+        <fields name="params">
+
+            <fieldset name="basic" >
+                <field name="display_note" type="radio" default="1" label="PLG_CROWDFUNDING_FILES_DISPLAY_NOTE" description="PLG_CROWDFUNDING_FILES_DISPLAY_NOTE_DESC" class="btn-group">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="files_type_info" type="textarea" default="PDF, RTF, DOC, PPS, PPT, XLS" label="PLG_CROWDFUNDING_FILES_TYPES_NOTE" description="PLG_CROWDFUNDING_FILES_TYPES_NOTE_DESC" />
+
+            </fieldset>
+        </fields>
+    </config>
+		
+</extension>

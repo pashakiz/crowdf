@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="content" method="upgrade">
+    <name>PLG_CONTENT_CROWDFUNDINGMANAGER</name>
+    <author>Todor Iliev</author>
+    <copyright>Copyright (C) 2015 Todor Iliev ( ITPrism.com ). All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <version>2.0</version>
+    <creationDate>30 June, 2015</creationDate>
+    <description><![CDATA[
+    <p><a href="http://itprism.com/free-joomla-extensions/ecommerce-gamification/crowdfunding-collective-raising-capital" target="_blank">Crowdfunding - Manager</a> is a plugin that adds functionality for managing projects on details page. It also displays information about the owner of the project, statistical data for the project,...</p>
+    <p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+    <p>Please, <a href="http://extensions.joomla.org/extensions/extension/e-commerce/donations/crowdfunding" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
+    ]]></description>
+    
+    <help url="PLG_CONTENT_CROWDFUNDINGMANAGER_HELP_URL"/>
+    
+    <files>
+        <filename plugin="crowdfundingmanager">crowdfundingmanager.php</filename>
+        <folder>language</folder>
+    </files>
+    
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field name="display_title" type="radio" default="0" label="PLG_CONTENT_CROWDFUNDINGMANAGER_DISPLAY_TITLE" description="PLG_CONTENT_CROWDFUNDINGMANAGER_DISPLAY_TITLE_DESC" class="btn-group">
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                
+                <field name="display_toolbar" type="radio" default="0" label="PLG_CONTENT_CROWDFUNDINGMANAGER_DISPLAY_TOOLBAR" description="PLG_CONTENT_CROWDFUNDINGMANAGER_DISPLAY_TOOLBAR_DESC" class="btn-group">
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                <field name="display_statistics" type="radio" default="0" label="PLG_CONTENT_CROWDFUNDINGMANAGER_DISPLAY_STATISTICS" description="PLG_CONTENT_CROWDFUNDINGMANAGER_DISPLAY_STATISTICS_DESC" class="btn-group">
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+            </fieldset>
+        </fields>
+	</config>
+</extension>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="content" method="upgrade">
+    <name>PLG_CONTENT_CROWDFUNDINGFILES</name>
+    <author>Todor Iliev</author>
+    <copyright>Copyright (C) 2015 Todor Iliev ( ITPrism.com ). All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <version>2.0</version>
+    <creationDate>30 June, 2015</creationDate>
+    <description><![CDATA[
+	<p>Content - Crowdfunding Files is a plug-in that displays a list with files which are assigned to a project.</p>
+	<p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+	<p>Please, <a href="http://extensions.joomla.org/extensions/extension/e-commerce/donations/crowdfunding" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
+	]]></description>
+    
+    <files>
+        <filename plugin="crowdfundingfiles">crowdfundingfiles.php</filename>
+
+		<folder>language</folder>
+		<folder>tmpl</folder>
+    </files>
+    
+    <help url="PLG_CONTENT_CROWDFUNDINGFILES_HELP_URL"/>
+
+    <config/>
+
+</extension>

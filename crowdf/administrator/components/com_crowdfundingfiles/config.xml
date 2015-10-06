@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+    <fieldset name="basic" label="COM_CROWDFUNDINGFILES_BASIC">
+        <field name="media_directory" type="text" default="/media/crowdfundingfiles"
+               label="COM_CROWDFUNDINGFILES_MEDIA_DIRECTORY" description="COM_CROWDFUNDINGFILES_MEDIA_DIRECTORY_DESC"
+               class="input-xxlarge"/>
+
+        <field name="legal_extensions" type="text" default="pdf, rtf, doc, pps, ppt, xls"
+               label="COM_CROWDFUNDINGFILES_LEGAL_EXTENSIONS" description="COM_CROWDFUNDINGFILES_LEGAL_EXTENSIONS_DESC"
+               class="input-xxlarge"/>
+
+        <field name="legal_types" type="textarea" default="application/pdf, text/rtf, application/powerpoint, application/mspowerpoint, application/msword, application/excel, application/vnd.ms-powerpoint"
+               label="COM_CROWDFUNDINGFILES_LEGAL_MIME_TYPES" description="COM_CROWDFUNDINGFILES_LEGAL_MIME_TYPES_DESC"
+               class="input-xxlarge"/>
+
+        <field name="max_size" type="text" default="5"
+               label="COM_CROWDFUNDINGFILES_MAX_SIZE_MB" description="COM_CROWDFUNDINGFILES_MAX_SIZE_MB_DESC"
+               class="input-mini"/>
+    </fieldset>
+    
+</config>

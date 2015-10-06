@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4" client="site" method="upgrade">
+	<name>MOD_CROWDFUNDINGPROFILE</name>
+	<author>Todor Iliev</author>
+	<copyright>Copyright (C) 2015 Todor Iliev ( ITPrism.com )</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>todor@itprism.com</authorEmail>
+	<authorUrl>http://itprism.com</authorUrl>
+	<version>2.0</version>
+	<creationDate>30 June, 2015</creationDate>
+	<description><![CDATA[
+    <p>Crowdfunding Profile is a module that displays information about the owner of a project.</p>
+    <p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive <strong>gifts</strong>, <strong>discount codes</strong>, information about <strong>updates</strong> and information about <strong>new ITPrism extensions</strong>.</p>
+    <p>Please, <a href="http://extensions.joomla.org/extensions/extension/e-commerce/donations/crowdfunding" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
+    ]]></description>
+	
+    <help url="MOD_CROWDFUNDINGPROFILE_HELP_URL"/>
+
+	<files>
+	    <filename module="mod_crowdfundingprofile">mod_crowdfundingprofile.php</filename>
+        <filename>helper.php</filename>
+		
+		<folder>language</folder>
+        <folder>tmpl</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+                
+                <field name="image_size" type="list"
+                    label="MOD_CROWDFUNDINGPROFILE_IMAGE_SIZE"
+                    description="MOD_CROWDFUNDINGPROFILE_IMAGE_SIZE_DESC"
+                    default="small" >
+
+                    <option value="icon">MOD_CROWDFUNDINGPROFILE_ICON</option>
+                    <option value="small">MOD_CROWDFUNDINGPROFILE_SMALL</option>
+                    <option value="medium">MOD_CROWDFUNDINGPROFILE_MEDIUM</option>
+                    <option value="large">MOD_CROWDFUNDINGPROFILE_LARGE</option>
+
+                </field>
+                
+                <field name="image_link" type="radio" class="btn-group"
+                    label="MOD_CROWDFUNDINGPROFILE_IMAGE_LINK"
+                    description="MOD_CROWDFUNDINGPROFILE_IMAGE_LINK_DESC"
+                    default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="display_location" type="radio" class="btn-group"
+                       label="MOD_CROWDFUNDINGPROFILE_DISPLAY_LOCATION"
+                       description="MOD_CROWDFUNDINGPROFILE_DISPLAY_LOCATION_DESC"
+                       default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="display_account_state" type="radio" class="btn-group"
+                       label="MOD_CROWDFUNDINGPROFILE_DISPLAY_ACCOUNT_STATE"
+                       description="MOD_CROWDFUNDINGPROFILE_DISPLAY_ACCOUNT_STATE_DESC"
+                       default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+			</fieldset>
+			
+			<fieldset name="advanced">
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+                    
+                <field
+                    name="cache"
+                    type="list"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                        value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option
+                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field
+                    name="cache_time"
+                    type="text"
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+                
+                <field name="cachemode" type="hidden" default="static">
+                    <option value="static"></option>
+                </field>
+            </fieldset>
+            
+		</fields>
+	</config>
+</extension>

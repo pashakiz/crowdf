@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="crowdfundingpayment" method="upgrade">
+    <name>PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER</name>
+    <author>Todor Iliev</author>
+    <copyright>Copyright (C) 2015 Todor Iliev ( ITPrism.com ). All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <version>2.1</version>
+    <creationDate>27 July, 2015</creationDate>
+    <description><![CDATA[
+    <p>Crowdfunding Payment - Bank Transfer is a plugin that provides functionality for preparing a payment via bank transfer.</p>
+    <p><a href='http://itprism.com/' target='_blank'>Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+    <p>Please, <a href='http://extensions.joomla.org/extensions/extension/e-commerce/donations/crowdfunding' target='_blank'>vote for the extension</a> on Joomla! Extensions Directory</p>
+    ]]></description>
+    
+    <help url="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_HELP_URL"/>
+    
+    <files>
+        <filename plugin="banktransfer">banktransfer.php</filename>
+
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+		<folder>tmpl</folder>
+    </files>
+
+    <config>
+		<fields name="params" addfieldpath="/administrator/components/com_crowdfunding/models/fields">
+			<fieldset name="basic">
+    	        <field name="beneficiary" type="editor" buttons="false"
+                    label="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_BENEFICIARY" 
+                    description="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_BENEFICIARY_DESC" 
+                    rows="15" 
+                    filter="safehtml"
+                />
+    	        <field name="return_url" type="text" label="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_RETURN_URL" description="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_RETURN_URL_DESC" class="span6" size="100" />
+                
+                <field name="auto_complete" type="radio" default="0" label="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_AUTO_COMPLETE" description="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_AUTO_COMPLETE_DESC" class="btn-group" >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="display_additional_info" type="radio" default="0" label="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_DISPLAY_ADDITIONAL_INFO" description="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_DISPLAY_ADDITIONAL_INFO_DESC" class="btn-group" >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="additional_info" type="textarea" label="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_ADDITIONAL_INFO" description="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_ADDITIONAL_INFO_DESC" class="span6" rows="5" cols="60" />
+            </fieldset>
+            
+            <fieldset name="emails" label="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_NOTIFICATION_EMAILS" addfieldpath="/administrator/components/com_emailtemplates/models/fields">
+                <field name="admin_mail_id" type="emailtemplate" default="0" label="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_SEND_MAIL_ADMIN" description="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_SEND_MAIL_ADMIN_DESC" class="btn-group" />
+                <field name="creator_mail_id" type="emailtemplate" default="0" label="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_SEND_MAIL_CREATOR" description="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_SEND_MAIL_CREATOR_DESC" class="btn-group" />
+                <field name="user_mail_id" type="emailtemplate" default="0" label="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_SEND_MAIL_USER" description="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_SEND_MAIL_USER_DESC" class="btn-group" />
+                
+                <field name="email_mode" type="list" default="html" label="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_EMAIL_MODE" description="PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_EMAIL_MODE_DESC" >
+                   <option value="plain">PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_PLAIN</option>
+                   <option value="html">PLG_CROWDFUNDINGPAYMENT_BANKTRANSFER_HTML</option>
+                </field>
+			</fieldset>
+        </fields>
+	</config>
+</extension>

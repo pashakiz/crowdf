@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="library" version="3.4" method="upgrade">
+    <name>Crowdfunding Library</name>
+    <libraryname>Crowdfunding</libraryname>
+    <author>Todor Iliev</author>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <copyright>Copyright (C) 2015 Todor Iliev ( ITPrism.com ). All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <packager>ITPrism</packager>
+    <packagerurl>http://itprism.com</packagerurl>
+    <version>2.1</version>
+    <creationDate>27 July, 2015</creationDate>
+    <description>Crowdfunding Library</description>
+    <files>
+        <folder>Image</folder>
+        <folder>language</folder>
+        <folder>Log</folder>
+        <folder>Payment</folder>
+        <folder>Statistics</folder>
+        <folder>User</folder>
+        <folder>Validator</folder>
+
+        <file>Amount.php</file>
+        <file>Categories.php</file>
+        <file>Constants.php</file>
+        <file>Country.php</file>
+        <file>Currencies.php</file>
+        <file>Currency.php</file>
+        <file>Date.php</file>
+        <file>Filters.php</file>
+        <file>init.php</file>
+        <file>Intention.php</file>
+        <file>Location.php</file>
+        <file>Locations.php</file>
+        <file>Project.php</file>
+        <file>Projects.php</file>
+        <file>Reward.php</file>
+        <file>Rewards.php</file>
+        <file>Transaction.php</file>
+        <file>Transactions.php</file>
+        <file>Type.php</file>
+        <file>Types.php</file>
+        <file>Updates.php</file>
+        <file>Version.php</file>
+    </files>
+</extension>

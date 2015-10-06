@@ -1,0 +1,1 @@
+ALTER TABLE `#__crowdf_projects` ADD `hits` SMALLINT UNSIGNED NOT NULL DEFAULT '0' AFTER `pitch_image`;

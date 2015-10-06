@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.4" method="upgrade">
+	<name>Crowdfunding Partners Package</name>
+	<packagename>crowdfundingpartners</packagename>
+	<author>Todor Iliev</author>
+    <authorEmail>todor@itprism.com</authorEmail>
+    <authorUrl>http://itprism.com</authorUrl>
+    <copyright>Copyright (C) 2015 Todor Iliev ( ITPrism.com )</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html</license>
+    <version>2.0</version>
+    <creationDate>30 June, 2015</creationDate>
+    <url>http://itprism.com</url>
+	<packager>Todor Iliev</packager>
+	<packagerurl>http://itprism.com</packagerurl>
+	<description><![CDATA[
+	<p>Crowdfunding Partners is a Joomla! extension that provides functionality users to assign partners to their projects.</p>
+	<p><a href="http://itprism.com/" target="_blank">Subscribe for the newsletter</a> to receive <strong>gifts</strong>, <strong>discount codes</strong>, information about <strong>updates</strong> and information about <strong>new ITPrism extensions</strong>.</p>
+	<p>Please, <a href="http://extensions.joomla.org/extensions/extension/e-commerce/donations/crowdfunding" target="_blank">vote for the extension</a> on Joomla! Extensions Directory</p>
+	]]></description>
+	
+	<files folder="packages">
+		<file type="component" 	id="com_crowdfundingpartners" >com_crowdfundingpartners.zip</file>
+		<file type="library" 	id="lib_crowdfundingpartners" >lib_crowdfundingpartners.zip</file>
+
+        <file type="plugin" id="plg_crowdfunding_partners" group="crowdfunding">plg_crowdfunding_partners.zip</file>
+		<file type="plugin" id="plg_content_crowdfundingpartners" group="content">plg_content_crowdfundingpartners.zip</file>
+	</files>
+
+	<scriptfile>install.php</scriptfile>
+</extension>
